@@ -1,0 +1,59 @@
+{
+  "name": "object-pick",
+  "description": "Returns a filtered copy of an object with only the specified keys, exactly like `pick` from lo-dash / underscore.",
+  "version": "0.1.0",
+  "homepage": "https://github.com/jonschlinkert/object-pick",
+  "author": {
+    "name": "Jon Schlinkert",
+    "url": "https://github.com/jonschlinkert"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jonschlinkert/object-pick.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jonschlinkert/object-pick/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/jonschlinkert/object-pick/blob/master/LICENSE-MIT"
+    }
+  ],
+  "main": "index.js",
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "mocha -R spec"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "should": "^4.0.4",
+    "verb": ">= 0.2.6"
+  },
+  "keywords": [
+    "check",
+    "is",
+    "is-object",
+    "isobject",
+    "javascript",
+    "key",
+    "keys",
+    "object",
+    "pick",
+    "plain",
+    "prop",
+    "properties",
+    "property",
+    "props",
+    "type",
+    "type-of",
+    "typeof",
+    "util",
+    "utilities",
+    "utility",
+    "utils",
+    "value"
+  ]
+}

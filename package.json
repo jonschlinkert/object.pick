@@ -1,7 +1,7 @@
 {
   "name": "object-pick",
   "description": "Returns a filtered copy of an object with only the specified keys, exactly like `pick` from lo-dash / underscore.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "https://github.com/jonschlinkert/object-pick",
   "author": {
     "name": "Jon Schlinkert",

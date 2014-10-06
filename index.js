@@ -12,7 +12,10 @@ module.exports = function pick(orig, keys) {
     return {};
   }
 
-  keys = Array.isArray(keys) ? keys : [keys];
+  if (typeof keys === 'string') {
+    keys = [].slice.call(arguments, 1);
+  }
+
   var len = keys.length;
   var o = {};
 

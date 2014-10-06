@@ -1,5 +1,5 @@
 /*!
- * object-pick <https://github.com/jonschlinkert/object-pick>
+ * object.pick <https://github.com/jonschlinkert/object.pick>
  *
  * Copyright (c) 2014 Jon Schlinkert, contributors.
  * Licensed under the MIT License

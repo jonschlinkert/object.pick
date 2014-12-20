@@ -16,7 +16,7 @@ module.exports = function pick(obj, keys) {
   }
 
   if (typeof keys === 'string') {
-    if (obj.hasOwnProperty(keys)) {
+    if (keys in obj) {
       res[keys] = obj[keys];
     }
     return res;
@@ -26,7 +26,7 @@ module.exports = function pick(obj, keys) {
 
   while (len--) {
     var key = keys[i++];
-    if (obj.hasOwnProperty(key)) {
+    if (key in obj) {
       res[key] = obj[key];
     }
   }

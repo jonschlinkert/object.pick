@@ -1,4 +1,4 @@
-# object.pick [![NPM version](https://badge.fury.io/js/object.pick.svg)](http://badge.fury.io/js/object.pick)
+# object.pick [![NPM version](https://badge.fury.io/js/object.pick.svg)](http://badge.fury.io/js/object.pick)  [![Build Status](https://travis-ci.org/jonschlinkert/object.pick.svg)](https://travis-ci.org/jonschlinkert/object.pick) 
 
 > Returns a filtered copy of an object with only the specified keys, like `pick` from lo-dash / underscore.
 

@@ -7,24 +7,28 @@
 
 'use strict';
 
-module.exports = function pick(orig, keys) {
-  if (orig == null) {
-    return {};
+module.exports = function pick(obj, keys) {
+  var res = {};
+  var i = 0;
+
+  if (typeof obj !== 'object') {
+    return res;
   }
 
   if (typeof keys === 'string') {
-    keys = [].slice.call(arguments, 1);
+    if (obj.hasOwnProperty(keys)) {
+      res[keys] = obj[keys];
+    }
+    return res;
   }
 
   var len = keys.length;
-  var o = {};
 
-  for (var i = 0; i < len; i++) {
-    var key = keys[i];
-
-    if (orig.hasOwnProperty(key)) {
-      o[key] = orig[key];
+  while (len--) {
+    var key = keys[i++];
+    if (obj.hasOwnProperty(key)) {
+      res[key] = obj[key];
     }
   }
-  return o;
+  return res;
 };

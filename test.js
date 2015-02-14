@@ -1,7 +1,7 @@
 /*!
  * object.pick <https://github.com/jonschlinkert/object.pick>
  *
- * Copyright (c) 2014 Jon Schlinkert
+ * Copyright (c) 2014-2015 Jon Schlinkert
  * Licensed under the MIT License
  */
 
@@ -11,7 +11,7 @@ var should = require('should');
 var pick = require('./');
 
 describe('.pick()', function () {
-  it('should pick keys specified as strings.', function () {
+  it('should pick a property from an object.', function () {
     pick({a: 'a', b: 'b'}, 'a').should.eql({a: 'a'});
   });
 

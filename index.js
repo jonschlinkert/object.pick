@@ -1,7 +1,7 @@
 /*!
  * object.pick <https://github.com/jonschlinkert/object.pick>
  *
- * Copyright (c) 2014 Jon Schlinkert, contributors.
+ * Copyright (c) 2014-2015 Jon Schlinkert, contributors.
  * Licensed under the MIT License
  */
 

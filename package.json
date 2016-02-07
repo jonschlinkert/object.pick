@@ -3,22 +3,15 @@
   "description": "Returns a filtered copy of an object with only the specified keys, like `pick` from lo-dash / underscore.",
   "version": "1.1.1",
   "homepage": "https://github.com/jonschlinkert/object.pick",
-  "author": {
-    "name": "Jon Schlinkert",
-    "url": "https://github.com/jonschlinkert"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/jonschlinkert/object.pick.git"
-  },
+  "author": "Jon Schlinkert (https://github.com/jonschlinkert)",
+  "repository": "jonschlinkert/object.pick",
   "bugs": {
     "url": "https://github.com/jonschlinkert/object.pick/issues"
   },
-  "license": {
-    "type": "MIT",
-    "url": "https://github.com/jonschlinkert/object.pick/blob/master/LICENSE"
-  },
-  "files": ["index.js"],
+  "license": "MIT",
+  "files": [
+    "index.js"
+  ],
   "main": "index.js",
   "engines": {
     "node": ">=0.10.0"
@@ -28,10 +21,15 @@
   },
   "devDependencies": {
     "mocha": "*",
-    "should": "^4.0.4"
+    "should": "*"
   },
   "keywords": [
     "object",
     "pick"
-  ]
+  ],
+  "verb": {
+    "related": {
+      "list": []
+    }
+  }
 }

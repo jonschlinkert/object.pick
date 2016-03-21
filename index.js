@@ -7,14 +7,14 @@
 
 'use strict';
 
-module.exports = function pick(obj, keys) {
-  var res = {};
-  var i = 0;
+var isObject = require('isobject');
 
-  if (typeof obj !== 'object') {
-    return res;
+module.exports = function pick(obj, keys) {
+  if (!isObject(obj) && typeof obj !== 'function') {
+    return {};
   }
 
+  var res = {};
   if (typeof keys === 'string') {
     if (keys in obj) {
       res[keys] = obj[keys];
@@ -23,9 +23,10 @@ module.exports = function pick(obj, keys) {
   }
 
   var len = keys.length;
+  var idx = -1;
 
-  while (len--) {
-    var key = keys[i++];
+  while (++idx < len) {
+    var key = keys[idx];
     if (key in obj) {
       res[key] = obj[key];
     }

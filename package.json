@@ -43,10 +43,10 @@
     ],
     "related": {
       "list": [
+        "extend-shallow",
         "get-value",
-        "set-value",
         "mixin-deep",
-        "extend-shallow"
+        "set-value"
       ],
       "highlight": "object.omit"
     },

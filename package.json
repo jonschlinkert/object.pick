@@ -1,7 +1,7 @@
 {
   "name": "object.pick",
   "description": "Returns a filtered copy of an object with only the specified keys, similar to `_.pick` from lodash / underscore.",
-  "version": "1.1.2",
+  "version": "1.2.0",
   "homepage": "https://github.com/jonschlinkert/object.pick",
   "author": "Jon Schlinkert (https://github.com/jonschlinkert)",
   "repository": "jonschlinkert/object.pick",
@@ -23,9 +23,9 @@
     "isobject": "^2.1.0"
   },
   "devDependencies": {
-    "gulp-format-md": "^0.1.7",
-    "mocha": "^2.4.5",
-    "vinyl": "^1.1.1"
+    "gulp-format-md": "^0.1.11",
+    "mocha": "^3.1.2",
+    "vinyl": "^2.0.0"
   },
   "keywords": [
     "object",

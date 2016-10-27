@@ -20,7 +20,7 @@
     "test": "mocha"
   },
   "dependencies": {
-    "isobject": "^2.0.0"
+    "isobject": "^2.1.0"
   },
   "devDependencies": {
     "gulp-format-md": "^0.1.7",

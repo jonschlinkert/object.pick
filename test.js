@@ -42,9 +42,22 @@ describe('.pick()', function() {
     assert.deepEqual(pick(fn, 'a'), {a: 'foo'});
   });
 
+
+  it('should pick a property from a function with alias', function() {
+    function fn() {}
+    fn.a = 'foo';
+    fn.b = 'bar';
+    assert.deepEqual(pick(fn, 'a as b'), {b: 'foo'});
+  });
+
   it('should pick multiple properties', function() {
     assert.deepEqual(pick({a: 'a', b: 'b', c: 'c'}, ['a', 'b']), {a: 'a', b: 'b'});
     assert.deepEqual(pick({foo: 'foo', bar: 'bar', baz: 'baz'}, ['foo', 'bar']), {foo: 'foo', bar: 'bar'});
+  });
+
+  it('should pick multiple properties with alias', function() {
+    assert.deepEqual(pick({a: 'a', b: 'b', c: 'c'}, ['a as aa', 'b as bb']), {aa: 'a', bb: 'b'});
+    assert.deepEqual(pick({foo: 'foo', bar: 'bar', baz: 'baz'}, ['foo as f', 'bar as b']), {f: 'foo', b: 'bar'});
   });
 
   it('should ignore keys that do not exist', function() {

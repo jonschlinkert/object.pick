@@ -7,14 +7,14 @@
 
 'use strict';
 
-let isObject = value => value !== null && typeof value === 'object';
+var isObject = value => value !== null && typeof value === 'object';
 
 module.exports = function pick(obj, keys) {
   if (!isObject(obj) && typeof obj !== 'function') {
     return {};
   }
 
-  let res = {};
+  var res = {};
   if (typeof keys === 'string') {
     if (keys in obj) {
       res[keys] = obj[keys];
@@ -22,11 +22,11 @@ module.exports = function pick(obj, keys) {
     return res;
   }
 
-  let len = keys.length;
-  let idx = -1;
+  var len = keys.length;
+  var idx = -1;
 
   while (++idx < len) {
-    let key = keys[idx];
+    var key = keys[idx];
     if (key in obj) {
       res[key] = obj[key];
     }
